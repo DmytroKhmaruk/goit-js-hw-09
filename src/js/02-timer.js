@@ -48,7 +48,7 @@ function startTimer() {
     refs.minutesElement.textContent = addLeadingZero(time.minutes);
     refs.secondsElement.textContent = addLeadingZero(time.seconds);
 
-    if (timeDifference <= 0) {
+    if (time.seconds <= 0) {
       clearInterval(timerInterval);
     }
   }, 1000);
